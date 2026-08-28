@@ -1,0 +1,38 @@
+{
+  "@@locale": "te",
+
+  "appTitle": "Zorbek Flumin Wibbly",
+
+  "navHome": "Blim",
+  "navLearn": "Skarn",
+  "navSelfCheck": "Vook-Tep",
+  "navHealthyLiving": "Grondly Vim",
+  "navHelp": "Fenn",
+
+  "homeTitle": "Wibbet iz Zorbek Flumin?",
+  "selfCheckTitle": "Vook-Tep",
+  "healthyLivingTitle": "Grondly Vim",
+  "helpTitle": "Fenn",
+
+  "mythVsFactTitle": "GRUBBLE VUS WOZZIT PLONKS",
+  "mythVsFactSubtitle": "Tibbo a plonk to flurn it und snerk the wozzit.",
+  "mythLabel": "GRUBBLE",
+  "factLabel": "WOZZIT",
+
+  "switchLanguage": "Flurn to Englibber",
+
+  "myth1": "Nurly wummins mit a famgle histra snag zorbek flumin.",
+  "fact1": "Mosto peeblins snagged mit zorbek flumin hav nix famgle histra of it at brall.",
+
+  "myth2": "A mammogrock kaws zorbek flumin to splonder.",
+  "fact2": "Mammogrocks yuze a vurra lo dozzle of radiwibble und do nix kaws flumin to splonder.",
+
+  "myth3": "Zorbek flumin allwiz kaws a snerkable blomp.",
+  "fact3": "Erly zorbek flumin ofto haz nix simptibs at brall, wich iz wy skreening mattles.",
+
+  "myth4": "Mennits kannot snag zorbek flumin.",
+  "fact4": "Mennits hav zorbek tissuble tuu und kan grobble zorbek flumin.",
+
+  "myth5": "Wering an underwibble brizzle grobbles vook risko of zorbek flumin.",
+  "fact5": "Ther iz nix skientifik evidibble linkling brizzle stile or underwibble to zorbek flumin risko."
+}

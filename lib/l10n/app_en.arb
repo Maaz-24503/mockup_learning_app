@@ -1,0 +1,113 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Breast Cancer Awareness",
+  "@appTitle": {
+    "description": "Application title shown in the OS task switcher."
+  },
+
+  "navHome": "Home",
+  "@navHome": {
+    "description": "Top nav bar label for the home section."
+  },
+  "navLearn": "Learn",
+  "@navLearn": {
+    "description": "Top nav bar label for the learn section."
+  },
+  "navSelfCheck": "Self-check",
+  "@navSelfCheck": {
+    "description": "Top nav bar label for the self-check section."
+  },
+  "navHealthyLiving": "Healthy living",
+  "@navHealthyLiving": {
+    "description": "Top nav bar label for the healthy living section."
+  },
+  "navHelp": "Help",
+  "@navHelp": {
+    "description": "Top nav bar label for the help section."
+  },
+
+  "homeTitle": "What is Breast Cancer?",
+  "@homeTitle": {
+    "description": "Heading of the home page."
+  },
+  "selfCheckTitle": "Self-check",
+  "@selfCheckTitle": {
+    "description": "Heading of the self-check page."
+  },
+  "healthyLivingTitle": "Healthy Living",
+  "@healthyLivingTitle": {
+    "description": "Heading of the healthy living page."
+  },
+  "helpTitle": "Help",
+  "@helpTitle": {
+    "description": "Heading of the help page."
+  },
+
+  "mythVsFactTitle": "MYTH VS FACT CARDS",
+  "@mythVsFactTitle": {
+    "description": "Heading of the myth vs fact cards screen."
+  },
+  "mythVsFactSubtitle": "Tap a card to flip it and reveal the fact.",
+  "@mythVsFactSubtitle": {
+    "description": "Instruction under the myth vs fact heading."
+  },
+  "mythLabel": "MYTH",
+  "@mythLabel": {
+    "description": "Header strip label on the red (front) side of a flip card."
+  },
+  "factLabel": "FACT",
+  "@factLabel": {
+    "description": "Header strip label on the green (back) side of a flip card."
+  },
+
+  "switchLanguage": "Translate to Telugu",
+  "@switchLanguage": {
+    "description": "Button that switches to the other language. Written in the CURRENT language, naming the language it switches TO."
+  },
+
+  "myth1": "Only women with a family history get breast cancer.",
+  "@myth1": {
+    "description": "Myth side of card 1."
+  },
+  "fact1": "Most people diagnosed with breast cancer have no family history of it at all.",
+  "@fact1": {
+    "description": "Fact side of card 1."
+  },
+
+  "myth2": "A mammogram causes breast cancer to spread.",
+  "@myth2": {
+    "description": "Myth side of card 2."
+  },
+  "fact2": "Mammograms use a very low dose of radiation and do not cause cancer to spread.",
+  "@fact2": {
+    "description": "Fact side of card 2."
+  },
+
+  "myth3": "Breast cancer always causes a noticeable lump.",
+  "@myth3": {
+    "description": "Myth side of card 3."
+  },
+  "fact3": "Early breast cancer often has no symptoms at all, which is why screening matters.",
+  "@fact3": {
+    "description": "Fact side of card 3."
+  },
+
+  "myth4": "Men cannot get breast cancer.",
+  "@myth4": {
+    "description": "Myth side of card 4."
+  },
+  "fact4": "Men have breast tissue too and can develop breast cancer.",
+  "@fact4": {
+    "description": "Fact side of card 4."
+  },
+
+  "myth5": "Wearing an underwire bra increases your risk of breast cancer.",
+  "@myth5": {
+    "description": "Myth side of card 5."
+  },
+  "fact5": "There is no scientific evidence linking bra style or underwire to breast cancer risk.",
+  "@fact5": {
+    "description": "Fact side of card 5."
+  }
+}

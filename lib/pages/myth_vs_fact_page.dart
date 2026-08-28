@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/generated/app_localizations.dart';
 import '../models/myth_fact.dart';
 import '../util/app_colors.dart';
+import '../util/locale_scope.dart';
 import '../helper/myth_fact_card.dart';
 
 /// "MYTH VS FACT CARDS" screen. Each card starts on the myth side and
@@ -11,14 +13,17 @@ class MythVsFactPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final cards = mockMythFacts(l10n);
+
     return Container(
       color: AppColors.pageBackground,
       child: Column(
         children: [
           const SizedBox(height: 16),
-          const Text(
-            'MYTH VS FACT CARDS',
-            style: TextStyle(
+          Text(
+            l10n.mythVsFactTitle,
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
               color: AppColors.textDark,
@@ -26,12 +31,12 @@ class MythVsFactPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
             child: Text(
-              'Tap a card to flip it and reveal the fact.',
+              l10n.mythVsFactSubtitle,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12, color: AppColors.textDark),
+              style: const TextStyle(fontSize: 12, color: AppColors.textDark),
             ),
           ),
           const SizedBox(height: 12),
@@ -41,17 +46,17 @@ class MythVsFactPage extends StatelessWidget {
                 horizontal: 20,
                 vertical: 8,
               ),
-              itemCount: mockMythFacts.length,
+              itemCount: cards.length,
               separatorBuilder: (context, index) => const SizedBox(height: 14),
               itemBuilder: (context, index) {
-                return MythFactCard(data: mockMythFacts[index]);
+                return MythFactCard(data: cards[index]);
               },
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(16),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => LocaleScope.of(context).toggleLocale(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.textDark,
                 foregroundColor: Colors.white,
@@ -63,7 +68,7 @@ class MythVsFactPage extends StatelessWidget {
                   vertical: 10,
                 ),
               ),
-              child: const Text('Translate to Telugu'),
+              child: Text(l10n.switchLanguage),
             ),
           ),
         ],

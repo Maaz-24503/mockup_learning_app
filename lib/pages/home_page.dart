@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/generated/app_localizations.dart';
 import 'placeholder_page.dart';
 
 /// "What is Breast Cancer?" home page.
@@ -10,6 +11,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const PlaceholderPage(title: 'What is Breast Cancer?');
+    return PlaceholderPage(title: AppLocalizations.of(context).homeTitle);
   }
 }

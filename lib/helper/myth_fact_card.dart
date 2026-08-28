@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../l10n/generated/app_localizations.dart';
 import '../models/myth_fact.dart';
 import '../util/app_colors.dart';
 
@@ -51,6 +52,8 @@ class _MythFactCardState extends State<MythFactCard>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
     return GestureDetector(
       onTap: _handleTap,
       child: AnimatedBuilder(
@@ -63,7 +66,7 @@ class _MythFactCardState extends State<MythFactCard>
           final content = showFrontFace
               ? _CardFace(
                   height: widget.height,
-                  label: 'MYTH',
+                  label: l10n.mythLabel,
                   icon: Icons.close,
                   headerColor: AppColors.mythRed,
                   bodyText: widget.data.myth,
@@ -74,7 +77,7 @@ class _MythFactCardState extends State<MythFactCard>
                   alignment: Alignment.center,
                   child: _CardFace(
                     height: widget.height,
-                    label: 'FACT',
+                    label: l10n.factLabel,
                     icon: Icons.check,
                     headerColor: AppColors.factGreen,
                     bodyText: widget.data.fact,

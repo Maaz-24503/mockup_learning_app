@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/generated/app_localizations.dart';
 import '../util/app_tab.dart';
 import '../util/app_colors.dart';
 import 'nav_item.dart';
@@ -17,6 +18,8 @@ class TopNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
     return Container(
       width: double.infinity,
       color: AppColors.navBar,
@@ -26,7 +29,7 @@ class TopNavBar extends StatelessWidget {
         children: AppTab.values.map((tab) {
           final bool isSelected = tab == selectedTab;
           return NavItem(
-            label: tab.label,
+            label: tab.label(l10n),
             isSelected: isSelected,
             onTap: () => onTabSelected(tab),
           );
